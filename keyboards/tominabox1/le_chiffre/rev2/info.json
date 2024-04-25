@@ -1,19 +1,19 @@
 {
-    "bootloader": "atmel-dfu",
+    "bootloader": "rp2040",
     "build": {
         "lto": true
     },
     "diode_direction": "ROW2COL",
     "encoder": {
         "rotary": [
-            {"pin_a": "B6", "pin_b": "C6"}
+            {"pin_a": "GP28", "pin_b": "GP29"}
         ]
     },
     "matrix_pins": {
-        "cols": ["B2", "F0", "F1", "F4", "F5", "B5", "B4", "D7", "D6", "D4"],
-        "rows": ["B3", "F6", "F7", "C7"]
+        "cols": ["GP2", "GP3", "GP4", "GP5", "GP6", "GP7", "GP8", "GP9", "GP12", "GP13"],
+        "rows": ["GP21", "GP23", "GP20", "GP22"]
     },
-    "processor": "atmega32u4",
+    "processor": "RP2040",
     "usb": {
         "device_version": "0.0.2"
     },
